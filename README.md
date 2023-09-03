@@ -31,14 +31,13 @@ Track and reduce carbon emissions from your purchases with this open-source CO2 
 
 ### Purpose
 
-The CO2 Emissions Tracker is designed to help users monitor and reduce their carbon footprint by tracking emissions associated with their purchases.
+The CO2 Emissions Tracker is designed to be a versatile tool that any business or application owner or user can seamlessly integrate into their Node/Angular website. It allows them to calculate and visualize their carbon footprint per transaction. This not only raises awareness about the environmental impact of their operations but also promotes the benefits of their applications in terms of sustainability.
 
 ### Features
 
-- Track carbon emissions from purchases
+- Track carbon emissions for individual transactions
 - Categorize emissions by product type
-- Provide suggestions for eco-friendly alternatives
-- View and analyze emissions history
+- View and analyze emissions
 - Contribute to a sustainable future
 
 ## Getting Started
@@ -110,7 +109,7 @@ There are currently no Contribution Guidelines.
 
 ## License
 
-This project is licensed under the [GNU License](LICENSE) - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the [GPL-3 License](LICENSE) - see the [LICENSE](LICENSE) file for details.
 
 ## Contact
 
