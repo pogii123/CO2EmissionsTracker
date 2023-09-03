@@ -25,6 +25,7 @@ Track and reduce carbon emissions from your purchases with this open-source CO2 
   - [Important Considerations](#important-considerations)
 - [Contributing](#contributing)
 - [License](#license)
+- [Background and Motivation](#background-and-motivation)
 - [Contact](#contact)
 
 ## About the Project
@@ -110,6 +111,9 @@ There are currently no Contribution Guidelines.
 ## License
 
 This project is licensed under the [GPL-3 License](LICENSE) - see the [LICENSE](LICENSE) file for details.
+
+<h2 id="background-and-motivation">Background and Motivation</h2>
+This project originated from the DDLitlab movement at the University of Hamburg, which aims to enhance sustainability and the handling of large datasets. Specifically, this project was developed by students in Computer Science, Maximilian Lehmann, Hannes Klingler and Linus Pogoda.
 
 ## Contact
 
