@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Expandable Div</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  </head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="sun-fill" viewBox="0 0 16 16">
+      <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+    </symbol>
+  </svg>
+  <div style="background-image: url('assets/sustainable-startup.JPG'); background-size: cover; color: white; text-align: center;">
+    <div style="background: rgba(0, 85, 87, 0.7); ">
+        <div id="expand-div" class="row">
+        <div class="container">
+            <div class="row my-2 mx-2">
+            <div class="col-md-12" style="margin: auto;">
+                {{ totalCO2 }} KG CO2 WURDEN EINGESPART &nbsp; &nbsp;
+                <svg id="arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                </svg>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div id="expandable-div" class="row" style="display: none;">
+      <div class="container">
+        <div class="row my-2 mx-2">
+          <div class="col-md-12 py-5">
+            <h4>We believe that every single piece of plastic not threatening the ocean is making a difference.</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 my-3 mb-6" style="align-items: center; justify-content: center;">
+            <div class="number d-inline-flex">{{ digit1 }}</div>
+            <div class="number d-inline-flex">{{ digit2 }}</div>
+            <div class="number d-inline-flex">{{ digit3 }}</div>
+            <div class="number d-inline-flex">.</div>
+            <div class="number d-inline-flex">{{ digit4 }}</div>
+            <div class="number d-inline-flex">{{ digit5 }}</div>
+            <div class="number d-inline-flex">{{ digit6 }}</div>
+            <h5 class="py-3">KG Plastik haben wir gesammelt bevor es in dem Ozean gelandet ist.</h5>
+            <button type="button" class="btn btn-light btn-lg" href="https://www.fainin.com">MEHR ÜBER UNSERE MISSION</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="co2-tracker">
+      <h2>CO2 Tracker</h2>
+      
+      <!-- Gesamter CO2-Verbrauch -->
+      <div class="co2-total">
+        <p>Gesamter CO2-Verbrauch: {{ totalCO2 }} kg CO2</p>
+      </div>
+      
+      <!-- Kategorien und Verwendung -->
+      <div class="co2-categories">
+        <h3>Kategorien und Verwendung</h3>
+        <ul>
+          <li *ngFor="let data of co2Data">
+            <b>Category</b>: {{ data.category }} &emsp; &emsp; &emsp; <b>Amount:</b> {{ data.usage }}&emsp;&emsp;&emsp; <b>TotalCO2:</b> {{ data.co2Total }} kg CO2
+          </li>
+        </ul>
+      </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,266 @@
+[
+    {
+      "category": "gerate",
+      "co2usage": 32
+    },
+    {
+      "category": "sonstige-sportartikel",
+      "co2usage": 100
+    },
+    {
+      "category": "fahrrader-e-bikes",
+      "co2usage": 60
+    },
+    {
+      "category": "fahrradtrager",
+      "co2usage": 8
+    },
+    {
+      "category": "boote",
+      "co2usage": 8
+    },
+    {
+      "category": "books",
+      "co2usage": 120
+    },
+    {
+      "category": "hupfburg",
+      "co2usage": 12
+    },
+    {
+      "category": "kameras",
+      "co2usage": 45
+    },
+    {
+      "category": "campingequipment",
+      "co2usage": 20
+    },
+    {
+      "category": "lastenrad",
+      "co2usage": 70
+    },
+    {
+      "category": "teppichreiniger",
+      "co2usage": 4
+    },
+    {
+      "category": "kleidung",
+      "co2usage": 10
+    },
+    {
+      "category": "kompressor",
+      "co2usage": 140
+    },
+    {
+      "category": "computer-zubehor",
+      "co2usage": 20
+    },
+    {
+      "category": "kostume",
+      "co2usage": 5
+    },
+    {
+      "category": "deko",
+      "co2usage": 2
+    },
+    {
+      "category": "dj-equipment",
+      "co2usage": 15
+    },
+    {
+      "category": "drohnen",
+      "co2usage": 75
+    },
+    {
+      "category": "e-bike",
+      "co2usage": 60
+    },
+    {
+      "category": "e-scooter",
+      "co2usage": 60
+    },
+    {
+      "category": "mobel",
+      "co2usage": 300
+    },
+    {
+      "category": "gartengerate",
+      "co2usage": 300
+    },
+    {
+      "category": "sackkarre",
+      "co2usage": 15
+    },
+    {
+      "category": "instrumente",
+      "co2usage": 329
+    },
+    {
+      "category": "ipad",
+      "co2usage": 20
+    },
+    {
+      "category": "laptop",
+      "co2usage": 20
+    },
+    {
+      "category": "objektiv",
+      "co2usage": 20
+    },
+    {
+      "category": "beleuchtung",
+      "co2usage": 20
+    },
+    {
+      "category": "mikrofone-aufnahme",
+      "co2usage": 150
+    },
+    {
+      "category": "minibagger",
+      "co2usage": 20
+    },
+    {
+      "category": "handy",
+      "co2usage": 20
+    },
+    {
+      "category": "sonstige-kunst--musikartikel",
+      "co2usage": 329
+    },
+    {
+      "category": "sonstige-kinder-baby",
+      "co2usage": 104
+    },
+    {
+      "category": "sonstige-film--fotografieartikel",
+      "co2usage": 45
+    },
+    {
+      "category": "sonstige-spass--spieleartikel",
+      "co2usage": 104
+    },
+    {
+      "category": "spiele",
+      "co2usage": 38
+    },
+    {
+      "category": "sonstige-mobilitatsartikel",
+      "co2usage": 60
+    },
+    {
+      "category": "sonstige-party--eventartikel",
+      "co2usage": 80
+    },
+    {
+      "category": "sonstige-sportartikel",
+      "co2usage": 25
+    },
+    {
+      "category": "sonstige-reise--campingartikel",
+      "co2usage": 20
+    },
+    {
+      "category": "bierzeltgarnitur",
+      "co2usage": 20
+    },
+    {
+      "category": "kunstgemalde-dekoration",
+      "co2usage": 20
+    },
+    {
+      "category": "event-equipment",
+      "co2usage": 80
+    },
+    {
+      "category": "fotobox",
+      "co2usage": 20
+    },
+    {
+      "category": "zubehor",
+      "co2usage": 45
+    },
+    {
+      "category": "stromaggregat",
+      "co2usage": 280
+    },
+    {
+      "category": "hochdruckreiniger",
+      "co2usage": 16
+    },
+    {
+      "category": "drucker",
+      "co2usage": 250
+    },
+    {
+      "category": "projektoren",
+      "co2usage": 41
+    },
+    {
+      "category": "floss",
+      "co2usage": 8
+    },
+    {
+      "category": "dachbox",
+      "co2usage": 10
+    },
+    {
+      "category": "dachzelt",
+      "co2usage": 10
+    },
+    {
+      "category": "skateboards",
+      "co2usage": 140
+    },
+    {
+      "category": "schneeketten",
+      "co2usage": 100
+    },
+    {
+      "category": "mobile-lautsprecher",
+      "co2usage": 80
+    },
+    {
+      "category": "sonstige-sportartikel",
+      "co2usage": 100
+    },
+    {
+      "category": "sport-equipment",
+      "co2usage": 25
+    },
+    {
+      "category": "anzug",
+      "co2usage": 100
+    },
+    {
+      "category": "sonstige-elektronikartikel",
+      "co2usage": 160
+    },
+    {
+      "category": "zelte",
+      "co2usage": 20
+    },
+    {
+      "category": "werkzeug",
+      "co2usage": 32
+    },
+    {
+      "category": "spielzeug",
+      "co2usage": 38
+    },
+    {
+      "category": "kuhlanhanger",
+      "co2usage": 50
+    },
+    {
+      "category": "videokameras",
+      "co2usage": 45
+    },
+    {
+      "category": "videospiele-konsolen",
+      "co2usage": 779
+    },
+    {
+      "category": "brautkleid",
+      "co2usage": 100
+    }
+  ]

@@ -15,7 +15,14 @@ Track and reduce carbon emissions from your purchases with this open-source CO2 
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
-- [Usage](#usage)
+- [Usage (src/app/app.component.XXX)](#usage-srcappappcomponentxxx)
+  - [Importing Data](#importing-data)
+  - [Initialization](#initialization)
+  - [Adding Random Services (for development and testing purposes)](#adding-random-services-for-development-and-testing-purposes)
+  - [Adding Specific Services](#adding-specific-services)
+  - [Generating Six Digits](#generating-six-digits)
+  - [Calculating Total CO2](#calculating-total-co2)
+  - [Important Considerations](#important-considerations)
 - [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
@@ -40,9 +47,8 @@ The CO2 Emissions Tracker is designed to help users monitor and reduce their car
 
 To run this project, you will need:
 
-- Python 3.x
-- Flask
-- A compatible database (e.g., SQLite)
+- Node >= 16
+- see package.json for further dependencies
 
 ### Installation
 
@@ -56,24 +62,39 @@ To run this project, you will need:
    cd CO2EmissionsTracker
    ```
 
-3. Install the required dependencies:
-   ```sh
-   pip install -r requirements.txt
-   ```
+3. Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-4. Configure your database settings in `config.py`.
+## Usage (src/app/app.component.XXX)
 
-5. Run the application:
-   ```sh
-   python app.py
-   ```
+### Importing Data
+The component imports CO2 emission data from an external JSON file named `emissions.json`. This data is used to calculate and display CO2 emissions for various categories. Those data have to be valid and have to match with the data of the provider.
 
-## Usage
+### Initialization
+In the `ngOnInit` lifecycle hook, the component performs several tasks:
 
-1. Sign up or log in to the CO2 Emissions Tracker app.
-2. Enter your purchases and their associated emissions data.
-3. View your emissions history and track your progress.
-4. Get recommendations for reducing your carbon footprint.
+- It sets up an event listener using jQuery to toggle the visibility of an element with the ID `expandable-div`. This toggle effect happens when an element with the ID `expand-div` is clicked.
+- It logs the imported CSV data to the console.
+- It calls the `addRandomService` method five times to randomly add CO2 emission services with different categories and usages. (for testing)
+- It calculates the total CO2 emissions using the `calculateTotalCO2` method. 
+- It generates six digits representing the total CO2 emissions (each digit in a separate variable) using the `generateSixDigits` method.
+- It sets up an interval to call `addRandomService` and update the total CO2 emissions and displayed digits every 5 seconds.
+
+### Adding Random Services (for development and testing purposes)
+The `addRandomService` method selects a random category from the imported CSV data and assigns a random usage value between 1 and 3. It then calculates the CO2 emissions for this service based on the category's data and adds it to the `co2Data` array.
+
+### Adding Specific Services
+The `addService` method allows you to add services with specific categories and usages. It searches for the category data in the imported CSV data and calculates the CO2 emissions based on the provided usage. It then adds this service to the `co2Data` array. This is the most important method. Here is where you can connect your database backend (call this method everytime you write a new successfull transaction on the database)
+
+### Generating Six Digits
+The `generateSixDigits` method converts the total CO2 emissions into a string and splits it into individual digits. It assigns each digit to a separate variable (`digit1` to `digit6`). This is used for displaying the total CO2 emissions in a customized format.
+
+### Calculating Total CO2
+The `calculateTotalCO2` method iterates through the `co2Data` array and sums up the `co2Total` values to calculate the total CO2 emissions. It updates the `totalCO2` variable with the calculated value. It should be called every time you add a new service to co2Data (`addService` does it automatically). 
+
+### Important Considerations
+- Ensure that the imported `emissions.json` data is structured correctly and contains up-to-date information.
+- The component uses jQuery for DOM manipulation, so make sure jQuery is properly included in your project if you intend to use it.
+- The interval for adding random services and updating CO2 values is set to 5 seconds in this example. You can adjust this interval to your preference (for testing and developing).
 
 ## Contributing
 
@@ -94,3 +115,9 @@ This project is licensed under the [GNU License](LICENSE) - see the [LICENSE](LI
 ## Contact
 
 Linus Pogoda - [linus.pogoda@icloud.com](mailto:linus.pogoda@icloud.com)
+
+
+
+
+
+

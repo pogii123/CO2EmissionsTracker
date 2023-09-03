@@ -1,0 +1,39 @@
+body {
+    font-family: 'Roboto', sans-serif;
+  }
+  .number {
+    position: relative;
+    width: 57px;
+    height: 87px;
+    background: #eff1f4;
+    border-radius: 4px;
+    margin: 0 2px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    font-weight: 700;
+    box-shadow: 0 2.42748px 2.42748px #00000040;
+  }
+  #arrow {
+  -moz-transition: transform .5s;
+  -webkit-transition: transform .5s;
+  transition: transform .5s;
+  }
+
+  .flip {
+    transform: rotate(-180deg);
+  }
+
+  .expanded-content {
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0;
+    max-height: 0;
+  }
+  
+  .expanded-content.open {
+    max-height: 500px;
+    opacity: 1;
+  }
